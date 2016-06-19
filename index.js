@@ -15,10 +15,10 @@ var demobot = new protobot({
 //
 //-----------------------------------------------------------------------------------------------------------*/
 
-demobot.botName = 'demo-bot'; // ENTER YOUR BOT NAME HERE
+demobot.botName = 'dad'; // ENTER YOUR BOT NAME HERE
 
 demobot.rollCallResponse = function () {
-  return demobot.botName + ' reporting for duty'; // WRITE YOUR OWN RESPONSE TO ROLL CALL HERE
+  return demobot.botName + ' hi son'; // WRITE YOUR OWN RESPONSE TO ROLL CALL HERE
 }
 
 /*-------------------------------------------------------------------------------------------------------------
@@ -39,8 +39,8 @@ demobot.rollCallResponse = function () {
 
 
 demobot
-  .listenFor( "well hello demo-bot" )
-  .andReplyWith( "What's good human?" );
+  .listenFor( "hi dad" )
+  .andReplyWith( "hello son" );
 
 /*-------------------------------------------------------------------------------------------------------------
 //
@@ -64,20 +64,20 @@ demobot
 //
 //  || demobot
 //  ||   .hears(["im talking to you"])
-//  ||     .says("are you talkin to me?")
-//  ||     .says("are you talkin to me?!")
+//  ||     .says("Son, you talkin to me?")
+//  ||     .says("Son, you talkin to me?!")
 //  ||     .says("cause I don't see anybody else here")
-//  ||     .says("are you talkin to me?").end()
+//  ||     .says("Son, you talkin to me?").end()
 //  ||   .end()
 //
 //-----------------------------------------------------------------------------------------------------------*/
 
 demobot
   .hears(["im talking to you"])
-    .says("Are you talkin to me?")
-    .says("Are you talkin to me?!")
+    .says("Son, you talkin to me?")
+    .says("Son, you talkin to me?!")
     .says("'Cause I don't see anybody else here")
-    .says("Are you talkin to me?").end() // ends says() chain
+    .says("Son, you talkin to me?").end() // ends says() chain
   .end() // ends conversation
 
 /*-------------------------------------------------------------------------------------------------------------
@@ -195,8 +195,8 @@ demobot
           .hears(["lions"])
             .says("Roar!").end()
           .hears(["monkeys"])
-            .says("Monkeys are so funky!").end()
-        .defaultsTo("I am only listening for lions or monkeys. All other words are 100% jibber-jabber")
+            .says("Monkeys Son, so funky!").end()
+        .defaultsTo("I am only listening for lions or monkeys. All other words Son, 100% jibber-jabber")
     .defaultsTo("Sorry, I'm only listening for a yes or no")
   .end()
 
@@ -211,7 +211,7 @@ demobot
 
 /*
 // Use regular expressions instead of strings for hears()...
-// Here, Hillary and Bernie are case insensitive.
+// Here, Hillary and Bernie Son, case insensitive.
 // Go to regexr.com for more information!
 // TIP: This does not work with the first hears() of a conversation
 */
